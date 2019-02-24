@@ -1,0 +1,33 @@
+#backlogo {
+    width: 60%;
+    height: 65%;
+    margin-top: 3%;
+    margin-left: 20%;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+body {
+    background: url(../././images/textura-backinicio.jpg);
+    padding: 0px;
+    margin: 0px;
+}
+
+.panel {
+    width: 60%;
+    height: 65%;
+    margin-top: -67%;
+    margin-left: 73%;
+}
+
+.panelH {
+    background: #ed9600;
+}
+
+.panelB {
+    background-color: #088A29;
+}
