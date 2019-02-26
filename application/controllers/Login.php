@@ -6,6 +6,7 @@ class Login extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		$this->load->helper(array('auth/login_rules'));
+		$this->load->model('Auth');
 	}
 		
 	public function index() {
@@ -25,7 +26,14 @@ class Login extends CI_Controller {
 			echo json_encode($errors);
 			$this->output->set_status_header(400);
         } else {
-        	echo 'hola';
+        	$user = $this->input->post('username');
+			$pass = $this->input->post('password');
+			if (!$res = $this->Auth->login($user, $pass)) {
+				echo json_encode(array('msg' => 'Verifique sus credenciales'));
+				$this->output->set_status_header(401);
+				exit;
+			}
+			echo json_encode(array('msg' => 'Bienvenido'));
         }
 	}
 }

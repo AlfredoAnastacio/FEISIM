@@ -29,7 +29,7 @@
 							</div><br>
 							<div class="input-group" id="password">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-								<input type="password" class="form-control" name="password" placeholder="Ingrese una contraseña" minlength="7" required>
+								<input type="password" class="form-control" name="password" placeholder="Ingrese una contraseña" minlength="8" required>
 								<div class="invalid-feedback">
 
 								</div>
