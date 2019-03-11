@@ -26,7 +26,14 @@
                 },
                 401: function(xhr) {
                     var json = JSON.parse(xhr.responseText);
-                    console.log(json);
+                    console.log(json.msg);
+                    Swal.fire({
+                        title: json.msg,
+                        type: 'info',
+                        showCloseButton: true,
+                        focusConfirm: true,
+                        confirmButtonText: 'Aceptar',
+                    });
                 }
             },
         });

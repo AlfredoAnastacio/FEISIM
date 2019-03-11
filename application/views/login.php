@@ -45,5 +45,6 @@
 
 <script src="<?php echo base_url(); ?>assets/js/jquery-3.2.1.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/auth/login.js"></script>
+<script src="<?php echo base_url(); ?>node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
 </html>
